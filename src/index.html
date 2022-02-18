@@ -14,12 +14,14 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
-
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
-    <ul class="list"></ul>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit" class="btn-search">Search</button>
+      </form>
+      <div class="list"></div>
+      <button type="button" class="btn-render is-hidden">Load More</button>
+    </div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./servises/api.js"></script>
     <script src="./index.js"></script>
